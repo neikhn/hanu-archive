@@ -1,0 +1,5 @@
+__pycache__/
+part_a/__pycache__/*
+part_a/__pycache__
+**/*.pyc
+.venv
