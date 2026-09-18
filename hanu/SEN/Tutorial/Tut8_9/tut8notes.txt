@@ -1,0 +1,44 @@
+Stock: stocks which have not been purchased (on the market)
+       stocks have prices which change everyday.
+
+E.g. Stock ABC, quantity on the market is 105,000
+     current price: $15 per stock
+
+StockPurchase:
+       stocks which have been purchased by the user,
+       for a certain price,
+       at a certain time
+
+E.g. I bought 10 ABC stocks for $120, date: 2021-11-08.
+
+  - Client is the object of StockClient class.
+	Server is the object of StockServer class.
+
+  - Client calls methods on Server.
+	Server may return String, boolean, int, double...
+	response. Server may throw Exception.
+
+  - Client catches Exception thrown by Server.
+
+  - Client prints text on the console.
+	Server never prints anything, only returns data to client.
+
+(*) Behavior of Scanner.nextLine()
+
+    For input: "abc\n"
+      - clear "abc\n"
+      - return "abc"
+
+    For input: "\n"
+      - clear "\n"
+      - return ""
+
+You want to purchase 100 stocks
+but there're only 99 stocks available
+-> FailedException: Not enough stocks available!
+
+User enters stock no which is not listed
+--> FailedException: Stock not found!
+
+If purchase is successful, client prints:
+Purchase successfully!

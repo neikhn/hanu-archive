@@ -1,0 +1,2 @@
+nam pass0
+student pass2
